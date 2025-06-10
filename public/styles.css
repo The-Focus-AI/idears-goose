@@ -1,0 +1,63 @@
+body {
+  background-color: #f8f9fa;
+}
+
+.idea-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.idea-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vote-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.vote-btn:hover {
+  transform: scale(1.2);
+}
+
+.vote-count {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.note-item {
+  border-left: 3px solid #0d6efd;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.note-meta {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.attachment-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.attachment-name {
+  margin-left: 0.5rem;
+  flex-grow: 1;
+}
+
+.attachment-delete {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.attachment-delete:hover {
+  color: #a71d2a;
+}

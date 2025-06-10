@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  idears:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - idears-data:/app/data
+      - idears-uploads:/app/uploads
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+
+volumes:
+  idears-data:
+    driver: local
+  idears-uploads:
+    driver: local
